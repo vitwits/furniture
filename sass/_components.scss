@@ -1,0 +1,121 @@
+////////////////////////
+///////////HEADER
+
+.tile_1 {
+  background: url(../img/img.png) no-repeat center center / cover;
+  flex: 0 0 69%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  &__logo {
+    margin-top: 64px;
+    margin-left: 12%;
+  }
+
+  &__dsgn {
+    width: 210px;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    font-size: 23px;
+    line-height: 1;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__social i {
+    padding: 0 8px;
+    color: #95cac1;
+  }
+
+  &__fb {
+
+  }
+
+  &__twitter {
+
+  }
+
+  &__in {
+
+  }
+
+  &__google {
+    
+  }
+}
+
+.tile_2 {
+  background: #7acec3;
+  flex: 1;
+}
+
+//////////////////////////////////////
+////////////////PROJECT
+
+.tile_3 {
+  height: 100%;
+  width: 45%;
+  background: #ebb240;
+}
+
+.tile_4 {
+  height: 100%;
+  flex: 0 0 55%;
+  background: #ffffff;
+}
+
+.tile_5 {
+  height: 100%;
+  width: 385px;
+  background: url(../img/chair1.jpg) no-repeat center center/cover;
+
+}
+
+.tile_6 {
+  background-color: #eaeaea;
+  height: 100%;
+  flex: 1;
+}
+
+.tile_7 {
+  height: 100%;
+  width: 70%;
+  background: #fcfcfc;
+}
+
+.tile_8 {
+  height: 100%;
+  flex: 1;
+  background: #cecece;
+
+}
+
+.tile_9 {
+
+  background: #dfe0d9;
+}
+
+.tile_10 {
+
+  background: #e9eae2;
+}
+
+.tile_11 {
+
+  background: #ffffff;
+}
+
+
+.tile_12 {
+
+  
+}

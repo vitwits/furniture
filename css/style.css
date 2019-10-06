@@ -1,0 +1,125 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 400;
+  color: #333333;
+  min-height: 100vh; }
+
+.tile_1 {
+  background: url(../img/img.png) no-repeat center center/cover;
+  flex: 0 0 69%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start; }
+  .tile_1__logo {
+    margin-top: 64px;
+    margin-left: 12%; }
+  .tile_1__dsgn {
+    width: 210px; }
+  .tile_1__text {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    font-size: 23px;
+    line-height: 1; }
+  .tile_1__social {
+    display: flex;
+    justify-content: center; }
+  .tile_1__social i {
+    padding: 0 8px;
+    color: #95cac1; }
+
+.tile_2 {
+  background: #7acec3;
+  flex: 1; }
+
+.tile_3 {
+  height: 100%;
+  width: 45%;
+  background: #ebb240; }
+
+.tile_4 {
+  height: 100%;
+  flex: 0 0 55%;
+  background: #ffffff; }
+
+.tile_5 {
+  height: 100%;
+  width: 385px;
+  background: url(../img/chair1.jpg) no-repeat center center/cover; }
+
+.tile_6 {
+  background-color: #eaeaea;
+  height: 100%;
+  flex: 1; }
+
+.tile_7 {
+  height: 100%;
+  width: 70%;
+  background: #fcfcfc; }
+
+.tile_8 {
+  height: 100%;
+  flex: 1;
+  background: #cecece; }
+
+.tile_9 {
+  background: #dfe0d9; }
+
+.tile_10 {
+  background: #e9eae2; }
+
+.tile_11 {
+  background: #ffffff; }
+
+.container {
+  max-width: 3000px;
+  margin: 0 auto;
+  background: url(../img/bg.jpg) no-repeat center/cover;
+  min-height: 200vh; }
+
+.header {
+  display: flex;
+  width: 100%;
+  min-height: 640px; }
+
+.project {
+  display: flex;
+  width: 100%; }
+
+.project_1 {
+  display: flex;
+  flex-direction: column;
+  height: 1920px;
+  width: 69%;
+  background: yellowgreen; }
+
+.project_2 {
+  display: flex;
+  height: 640px;
+  width: 100%;
+  background: #30dbdb; }
+
+.project_3 {
+  display: flex;
+  height: 596px;
+  width: 100%;
+  background: #59257c; }
+
+.project_4 {
+  display: flex;
+  height: 385px;
+  width: 100%;
+  background: #918f20; }
+
+.project_5 {
+  display: flex;
+  flex-direction: column;
+  height: 1920px;
+  flex: 1;
+  background: #8a2c2c; }

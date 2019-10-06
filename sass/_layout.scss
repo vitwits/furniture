@@ -1,0 +1,56 @@
+.container {
+  max-width: 3000px;
+  margin: 0 auto;
+  background: url(../img/bg.jpg) no-repeat center / cover;
+  min-height: 200vh;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  min-height: 640px;
+  
+}
+
+.project {
+  display: flex;
+  width: 100%;
+}
+
+.project_1 {
+  display: flex;
+  flex-direction: column;
+  height: 1920px;
+  width: 69%;
+  background: yellowgreen;
+}
+
+.project_2 {
+  display: flex;
+  height: 640px;
+  width: 100%;
+  background: rgb(48, 219, 219);
+}
+
+.project_3 {
+  display: flex;
+  height: 596px;
+  width: 100%;
+  background: rgb(89, 37, 124);
+  
+}
+
+.project_4 {
+  display: flex;
+  height: 385px;
+  width: 100%;
+  background: rgb(145, 143, 32);
+}
+
+.project_5 {
+  display: flex;
+  flex-direction: column;
+  height: 1920px;
+  flex: 1;
+  background: rgb(138, 44, 44);
+}
