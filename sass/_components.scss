@@ -1,16 +1,37 @@
 ////////////////////////
+///////////GENERAL COMPONENTS
+.button {
+  font-size: 23px;
+  font-weight: 300;
+  color: #333;
+  text-transform: uppercase;
+}
+
+.button-light {
+  font-size: 23px;
+}
+
+
+////////////////////////
 ///////////HEADER
 
 .tile_1 {
-  background: url(../img/img.png) no-repeat center center / cover;
-  flex: 0 0 69%;
+  background:   
+    linear-gradient(
+      #535c0c21, 
+      #535c0c21), 
+      url(../img/img.png)
+      no-repeat right/cover;
+  background-size: contain;
+  flex: 20;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  position: relative;
 
   &__logo {
     margin-top: 64px;
-    margin-left: 12%;
+    margin-left: 16%;
   }
 
   &__dsgn {
@@ -55,67 +76,190 @@
 
 .tile_2 {
   background: #7acec3;
-  flex: 1;
+  flex: 9;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  font-weight: 400;
+  line-height: 1;
+  font-size: 17px;
+  text-transform: uppercase;
+
+
+  &__menu {
+    width: 160px;
+    height: 155px;
+    border: 3px solid #fff;
+    align-self: center;
+    margin-top: 64px;
+    margin-bottom: 114px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__icon {
+    width: 52px;
+    height: 22px;
+  }
+
+  &__address {
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    margin-left: 78px;
+    margin-bottom: 50px;
+  }
+
+  &__contact {
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    margin-left: 174px;
+  }
+
 }
 
 //////////////////////////////////////
-////////////////PROJECT
+//////////////////////////PROJECT
 
 .tile_3 {
   height: 100%;
-  width: 45%;
+  flex: 9;
   background: #ebb240;
 }
 
 .tile_4 {
   height: 100%;
-  flex: 0 0 55%;
-  background: #ffffff;
+  flex: 11;
+  background: #ffffff url(../img/lamp.jpg) no-repeat right center/cover;
+  background-size: contain;
 }
 
 .tile_5 {
   height: 100%;
-  width: 385px;
+  flex: 2;
   background: url(../img/chair1.jpg) no-repeat center center/cover;
+  background-size: height;
 
 }
 
 .tile_6 {
-  background-color: #eaeaea;
+  background:   
+    linear-gradient(
+      #70706e21, 
+      #70706e21), 
+      url(../img/chair2.png)
+      no-repeat right/cover;
+  background-size: contain;
   height: 100%;
-  flex: 1;
+  flex: 5;
 }
 
 .tile_7 {
   height: 100%;
-  width: 70%;
-  background: #fcfcfc;
+  flex: 5;
+  
+  
 }
 
 .tile_8 {
   height: 100%;
-  flex: 1;
-  background: #cecece;
+  flex: 2;
+  background:   
+    linear-gradient(
+      rgba(0, 0, 0, 0.18), 
+      rgba(0, 0, 0, 0.18)), 
+      url(../img/metal.png)
+      no-repeat left/cover;
+  background-size: contain;
 
 }
 
 .tile_9 {
-
-  background: #dfe0d9;
+  flex: 5;
+  background:   
+    linear-gradient(
+      rgba(0, 0, 0, 0.18), 
+      rgba(0, 0, 0, 0.18)), 
+      url(../img/lamp2.png)
+      no-repeat right/cover;
+  background-size: contain;
 }
 
 .tile_10 {
-
+  flex: 9;
   background: #e9eae2;
 }
 
 .tile_11 {
-
+  flex: 5;
   background: #ffffff;
 }
 
 
 .tile_12 {
+  height: 385px;
+  background: #776e6e;
+}
 
-  
+//////////////////////////////////////
+/////////////////////////STUDIO
+
+.tile_13 {
+
+}
+
+.tile_14 {
+
+}
+
+.tile_15 {
+
+}
+
+.tile_16 {
+
+}
+
+.tile_17 {
+
+}
+
+.tile_18 {
+
+}
+
+.tile_19 {
+
+}
+
+
+//////////////////////////////////////
+//////////////////////////NEWS
+.tile_20 {
+
+}
+
+.tile_21 {
+
+}
+
+.tile_22 {
+
+}
+
+
+//////////////////////////////////////
+//////////////////////////FOOTER
+.tile_23 {
+  flex: 1;
+  height: 100%;
+  background: rgb(42, 21, 21);
+}
+
+.tile_24 {
+  flex: 1;
+  height: 100%;
+  background: rgb(90, 133, 62);
 }

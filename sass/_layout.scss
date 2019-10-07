@@ -1,10 +1,12 @@
 .container {
   max-width: 3000px;
   margin: 0 auto;
-  background: url(../img/bg.jpg) no-repeat center / cover;
   min-height: 200vh;
 }
 
+
+///////////////////////////////////////
+///////////////////HEADER
 .header {
   display: flex;
   width: 100%;
@@ -12,6 +14,8 @@
   
 }
 
+//////////////////////////////////////
+////////////////PROJECT
 .project {
   display: flex;
   width: 100%;
@@ -20,37 +24,60 @@
 .project_1 {
   display: flex;
   flex-direction: column;
-  height: 1920px;
-  width: 69%;
-  background: yellowgreen;
+  flex: 20;
 }
 
 .project_2 {
   display: flex;
   height: 640px;
   width: 100%;
-  background: rgb(48, 219, 219);
 }
 
 .project_3 {
   display: flex;
   height: 596px;
-  width: 100%;
-  background: rgb(89, 37, 124);
-  
+  width: 100%;  
 }
 
 .project_4 {
   display: flex;
   height: 385px;
   width: 100%;
-  background: rgb(145, 143, 32);
 }
 
 .project_5 {
   display: flex;
   flex-direction: column;
-  height: 1920px;
-  flex: 1;
-  background: rgb(138, 44, 44);
+  height: 1621px;
+  flex: 9;
+}
+
+
+///////////////////////////////////////
+///////////////////STUDIO
+.studio {
+  display: flex;
+}
+
+.studio_1 {
+  display: flex;
+}
+
+.studio_2 {
+  display: flex;
+}
+
+
+///////////////////////////////////////
+///////////////////NEWS
+.news {
+  display: flex;
+}
+
+
+///////////////////////////////////////
+///////////////////FOOTER
+.footer {
+  display: flex;
+  height: 645px;
 }
