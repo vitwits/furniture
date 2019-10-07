@@ -114,21 +114,24 @@ body {
   background-size: contain; }
 
 .tile_9 {
-  flex: 5;
-  background: linear-gradient(rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.18)), url(../img/lamp2.png) no-repeat right/cover;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(82, 83, 71, 0.03), rgba(82, 83, 71, 0.03)), url(../img/lamp2.png) no-repeat right/cover;
   background-size: contain; }
 
 .tile_10 {
   flex: 9;
-  background: #e9eae2; }
+  background: linear-gradient(rgba(84, 88, 34, 0.151), rgba(84, 88, 34, 0.151)), url(../img/chair4.png) no-repeat top/cover;
+  background-size: contain; }
 
 .tile_11 {
   flex: 5;
-  background: #ffffff; }
+  background: url(../img/chair5.png) no-repeat left/cover;
+  background-size: contain; }
 
 .tile_12 {
   height: 385px;
-  background: #776e6e; }
+  background: #ebb240 }
 
 .tile_23 {
   flex: 1;
@@ -178,7 +181,13 @@ body {
   display: flex;
   flex-direction: column;
   height: 1621px;
+  background: #fff;
   flex: 9; }
+
+.project_6 {
+  flex: 5;
+  height: 100%;
+  background: #dfe0d9; }
 
 .studio {
   display: flex; }

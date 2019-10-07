@@ -16,12 +16,10 @@
 ///////////HEADER
 
 .tile_1 {
-  background:   
-    linear-gradient(
-      #535c0c21, 
-      #535c0c21), 
-      url(../img/img.png)
-      no-repeat right/cover;
+  background:
+    linear-gradient(#535c0c21,
+      #535c0c21),
+    url(../img/img.png) no-repeat right/cover;
   background-size: contain;
   flex: 20;
   display: flex;
@@ -57,21 +55,13 @@
     color: #95cac1;
   }
 
-  &__fb {
+  &__fb {}
 
-  }
+  &__twitter {}
 
-  &__twitter {
+  &__in {}
 
-  }
-
-  &__in {
-
-  }
-
-  &__google {
-    
-  }
+  &__google {}
 }
 
 .tile_2 {
@@ -145,12 +135,10 @@
 }
 
 .tile_6 {
-  background:   
-    linear-gradient(
-      #70706e21, 
-      #70706e21), 
-      url(../img/chair2.png)
-      no-repeat right/cover;
+  background:
+    linear-gradient(#70706e21,
+      #70706e21),
+    url(../img/chair2.png) no-repeat right/cover;
   background-size: contain;
   height: 100%;
   flex: 5;
@@ -159,42 +147,45 @@
 .tile_7 {
   height: 100%;
   flex: 5;
-  
-  
+
+
 }
 
 .tile_8 {
   height: 100%;
   flex: 2;
-  background:   
-    linear-gradient(
-      rgba(0, 0, 0, 0.18), 
-      rgba(0, 0, 0, 0.18)), 
-      url(../img/metal.png)
-      no-repeat left/cover;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.18),
+      rgba(0, 0, 0, 0.18)),
+    url(../img/metal.png) no-repeat left/cover;
   background-size: contain;
 
 }
 
 .tile_9 {
-  flex: 5;
-  background:   
-    linear-gradient(
-      rgba(0, 0, 0, 0.18), 
-      rgba(0, 0, 0, 0.18)), 
-      url(../img/lamp2.png)
-      no-repeat right/cover;
+  width: 100%;
+  height: 100%;
+  background:
+    linear-gradient(rgba(82, 83, 71, 0.03),
+      rgba(82, 83, 71, 0.03)),
+    url(../img/lamp2.png) no-repeat right/cover;
   background-size: contain;
 }
 
+
 .tile_10 {
   flex: 9;
-  background: #e9eae2;
+  background:
+    linear-gradient(rgba(84, 88, 34, 0.151),
+      rgba(84, 88, 34, 0.151)),
+    url(../img/chair4.png) no-repeat top/cover;
+  background-size: contain;
 }
 
 .tile_11 {
   flex: 5;
-  background: #ffffff;
+  background: url(../img/chair5.png) no-repeat left/cover;
+  background-size: contain;
 }
 
 
@@ -206,48 +197,28 @@
 //////////////////////////////////////
 /////////////////////////STUDIO
 
-.tile_13 {
+.tile_13 {}
 
-}
+.tile_14 {}
 
-.tile_14 {
+.tile_15 {}
 
-}
+.tile_16 {}
 
-.tile_15 {
+.tile_17 {}
 
-}
+.tile_18 {}
 
-.tile_16 {
-
-}
-
-.tile_17 {
-
-}
-
-.tile_18 {
-
-}
-
-.tile_19 {
-
-}
+.tile_19 {}
 
 
 //////////////////////////////////////
 //////////////////////////NEWS
-.tile_20 {
+.tile_20 {}
 
-}
+.tile_21 {}
 
-.tile_21 {
-
-}
-
-.tile_22 {
-
-}
+.tile_22 {}
 
 
 //////////////////////////////////////
