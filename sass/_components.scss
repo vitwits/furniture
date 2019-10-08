@@ -11,6 +11,111 @@
   font-size: 23px;
 }
 
+.header_1 {
+  text-transform: uppercase;
+  font-size: 61px;
+  font-weight: 400;
+  color: #fefefe;
+  display: block;
+}
+
+.header_2 {
+  text-transform: uppercase;
+  font-size: 31px;
+  font-weight: 300;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.header_2-light {
+  text-transform: uppercase;
+  font-size: 31px;
+  font-weight: 300;
+  color: #fff;
+  display: block;
+  margin-bottom: 22px;
+}
+
+.header_3 {
+  font-size: 23px;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #333;
+}
+
+.header_3-light {
+  font-size: 23px;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #fff;
+}
+
+.arrow-white {
+
+}
+
+.arrow-yellow {
+  width: 25px;
+  height: 18px;
+  fill:#ebb240;
+  margin-right: 10px;
+}
+
+.arrow-red {
+  
+}
+
+.heart {
+  height: 30px;
+  width: 30px;
+  margin-bottom: 8px;
+  
+}
+
+.likes {
+  font-size: 14px;
+  font-weight: 400;
+  color: #ff0000;
+}
+
+.likes-dimmed {
+  font-size: 14px;
+  font-weight: 400;
+  color: #fe7c7c;
+}
+
+.style_15-bold {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.style_15-lite {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1;
+}
+
+
+.style_15-bold-white {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 1;
+}
+
+.style_15-lite-white {
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 300;
+  color: #fff;
+  line-height: 1;
+}
+
+
 
 ////////////////////////
 ///////////HEADER
@@ -124,6 +229,28 @@
   flex: 11;
   background: #ffffff url(../img/lamp.jpg) no-repeat right center/cover;
   background-size: contain;
+  display: flex;
+  flex-direction: column;
+
+  &__model {
+    margin-top: 113px;
+    margin-left: 130px;
+  }
+
+  &__view {
+    display: flex;
+    align-items: center;
+    margin-left: 139px;
+    margin-top: 97px;
+  }
+
+  &__like {
+    display: flex;
+    flex-direction: column;
+    
+    margin-top: 148px;
+    margin-left: 216px;
+  }
 }
 
 .tile_5 {
@@ -131,6 +258,28 @@
   flex: 2;
   background: url(../img/chair1.jpg) no-repeat center center/cover;
   background-size: height;
+  display: flex;
+  flex-direction: column;
+
+  &__model {
+    margin-top: 53px;
+    margin-left: 42px;
+  }
+
+  &__view {
+    display: flex;
+    align-items: center;
+    margin-top: 49px;
+    margin-left: 40px;
+  }
+
+  &__like {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 42px;
+    margin-left: 130px;
+  }
 
 }
 
@@ -142,12 +291,76 @@
   background-size: contain;
   height: 100%;
   flex: 5;
+  display: flex;
+
+  &__model {
+    margin-top: 118px;
+    margin-left: 461px;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 44px;
+    margin-top: 123px;
+  }
+
+  &__view {
+    display: flex;
+    align-items: center;
+  }
+
+  &__like {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 35px;
+  }
 }
 
 .tile_7 {
   height: 100%;
   flex: 5;
+  display: flex;
+  flex-direction: column;
+  
 
+  &__pic {
+    background: linear-gradient(#ffffff21,
+        #ffffff21),
+      url(../img/chair3.png) no-repeat right/cover;
+    background-size: contain;
+    height: 200px;
+    width: 600px;
+    margin-top: 34px;
+    align-self: center;
+  }
+
+  &__overview {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    margin-left: 197px;
+  }
+
+  &__model {
+    flex: 1;
+    height: 100%;
+    margin-right: 108px;
+    
+  }
+
+  &__view {
+    display: flex;
+    align-items: center;
+  }
+
+  &__like {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 
 }
 
@@ -160,6 +373,16 @@
     url(../img/metal.png) no-repeat left/cover;
   background-size: contain;
 
+  &__view {
+    display: flex;
+    align-items: center;
+  }
+
+  &__like {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .tile_9 {
@@ -170,6 +393,22 @@
       rgba(82, 83, 71, 0.03)),
     url(../img/lamp2.png) no-repeat right/cover;
   background-size: contain;
+
+  &__model {
+    font-size: 15px;
+    font-weight: 300;
+  }
+
+  &__view {
+    display: flex;
+    align-items: center;
+  }
+
+  &__like {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 
@@ -180,18 +419,40 @@
       rgba(84, 88, 34, 0.151)),
     url(../img/chair4.png) no-repeat top/cover;
   background-size: contain;
+
+  &__view {
+    display: flex;
+    align-items: center;
+  }
+
+  &__like {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 .tile_11 {
   flex: 5;
   background: url(../img/chair5.png) no-repeat left/cover;
   background-size: contain;
+
+  &__view {
+    display: flex;
+    align-items: center;
+  }
+
+  &__like {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 
 .tile_12 {
   height: 385px;
-  background: #776e6e;
+  background: #ebb240;
 }
 
 //////////////////////////////////////
