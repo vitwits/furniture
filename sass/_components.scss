@@ -50,26 +50,22 @@
   color: #fff;
 }
 
-.arrow-white {
-
-}
+.arrow-white {}
 
 .arrow-yellow {
   width: 25px;
   height: 18px;
-  fill:#ebb240;
+  fill: #ebb240;
   margin-right: 10px;
 }
 
-.arrow-red {
-  
-}
+.arrow-red {}
 
 .heart {
-  height: 30px;
+  height: 28px;
   width: 30px;
   margin-bottom: 8px;
-  
+
 }
 
 .likes {
@@ -234,22 +230,23 @@
 
   &__model {
     margin-top: 113px;
-    margin-left: 130px;
+    // margin-left: 130px;
+    margin-left: 18%;
   }
 
   &__view {
     display: flex;
     align-items: center;
-    margin-left: 139px;
+    margin-left: 20%;
     margin-top: 97px;
   }
 
   &__like {
     display: flex;
     flex-direction: column;
-    
+
     margin-top: 148px;
-    margin-left: 216px;
+    margin-left: 30%;
   }
 }
 
@@ -263,14 +260,14 @@
 
   &__model {
     margin-top: 53px;
-    margin-left: 42px;
+    margin-left: 10%;
   }
 
   &__view {
     display: flex;
     align-items: center;
     margin-top: 49px;
-    margin-left: 40px;
+    margin-left: 10%;
   }
 
   &__like {
@@ -278,7 +275,7 @@
     flex-direction: column;
     justify-content: center;
     margin-top: 42px;
-    margin-left: 130px;
+    margin-left: 35%;
   }
 
 }
@@ -295,14 +292,14 @@
 
   &__model {
     margin-top: 118px;
-    margin-left: 461px;
+    margin-left: 49%;
   }
 
   &__container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 44px;
+    margin-left: 5%;
     margin-top: 123px;
   }
 
@@ -324,7 +321,7 @@
   flex: 5;
   display: flex;
   flex-direction: column;
-  
+  align-items: center; 
 
   &__pic {
     background: linear-gradient(#ffffff21,
@@ -334,32 +331,36 @@
     height: 200px;
     width: 600px;
     margin-top: 34px;
-    align-self: center;
+
   }
 
   &__overview {
     flex: 1;
-    height: 100%;
+    width: 550px;
     display: flex;
-    margin-left: 197px;
-  }
-
-  &__model {
-    flex: 1;
-    height: 100%;
-    margin-right: 108px;
     
   }
 
+  &__model {
+    flex: 7;
+    height: 100%;
+    margin-top: 7px;
+  }
+
   &__view {
+    flex: 6;
     display: flex;
     align-items: center;
+    margin-bottom: 10px;
   }
 
   &__like {
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-right: 5px;
+    margin-top: 24px;
   }
 
 }
@@ -373,15 +374,24 @@
     url(../img/metal.png) no-repeat left/cover;
   background-size: contain;
 
+  &__model {
+    margin-top: 102px;
+    margin-left: 203px;
+  }
+
   &__view {
     display: flex;
     align-items: center;
+    margin-top: 41px;
+    margin-left: 163px;
   }
 
   &__like {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-left: 250px;
+    margin-top: 30px;
   }
 }
 
@@ -393,21 +403,31 @@
       rgba(82, 83, 71, 0.03)),
     url(../img/lamp2.png) no-repeat right/cover;
   background-size: contain;
+  display: flex;
+  flex-direction: column;
 
   &__model {
     font-size: 15px;
     font-weight: 300;
+    line-height: 1;
+    margin-top: 47px;
+    margin-left: 10%;
+    
   }
 
   &__view {
     display: flex;
     align-items: center;
+    margin-top: 20px;
+    margin-left: 10%;
   }
 
   &__like {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 32px;
+    margin-left: 23%;
   }
 }
 
@@ -419,33 +439,57 @@
       rgba(84, 88, 34, 0.151)),
     url(../img/chair4.png) no-repeat top/cover;
   background-size: contain;
+  display: flex;
+  align-items: flex-end;
+
+  &__model {
+    margin-left: 12%;
+    margin-bottom: 46px;
+    flex: 9;
+  }
 
   &__view {
     display: flex;
     align-items: center;
+    margin-bottom: 82px;
+    flex: 8;
   }
 
   &__like {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 54px;
+    flex: 4;
   }
 }
 
 .tile_11 {
   flex: 5;
   background: url(../img/chair5.png) no-repeat left/cover;
-  background-size: contain;
+  background-size: 56%;
+  display: flex;
+  flex-direction: column;
+  
+
+  &__model {
+    margin-top: 60px;
+    margin-left: 320px;
+  }
 
   &__view {
     display: flex;
     align-items: center;
+    margin-top: 26px;
+    margin-left: 320px;
   }
 
   &__like {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-top: 28px;
+    margin-left: 405px;
   }
 }
 

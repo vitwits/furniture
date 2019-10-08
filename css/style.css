@@ -59,7 +59,7 @@ body {
   margin-right: 10px; }
 
 .heart {
-  height: 30px;
+  height: 28px;
   width: 30px;
   margin-bottom: 8px; }
 
@@ -175,17 +175,17 @@ body {
   flex-direction: column; }
   .tile_4__model {
     margin-top: 113px;
-    margin-left: 130px; }
+    margin-left: 18%; }
   .tile_4__view {
     display: flex;
     align-items: center;
-    margin-left: 139px;
+    margin-left: 20%;
     margin-top: 97px; }
   .tile_4__like {
     display: flex;
     flex-direction: column;
     margin-top: 148px;
-    margin-left: 216px; }
+    margin-left: 30%; }
 
 .tile_5 {
   height: 100%;
@@ -196,18 +196,18 @@ body {
   flex-direction: column; }
   .tile_5__model {
     margin-top: 53px;
-    margin-left: 42px; }
+    margin-left: 10%; }
   .tile_5__view {
     display: flex;
     align-items: center;
     margin-top: 49px;
-    margin-left: 40px; }
+    margin-left: 10%; }
   .tile_5__like {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin-top: 42px;
-    margin-left: 130px; }
+    margin-left: 35%; }
 
 .tile_6 {
   background: linear-gradient(#70706e21, #70706e21), url(../img/chair2.png) no-repeat right/cover;
@@ -217,12 +217,12 @@ body {
   display: flex; }
   .tile_6__model {
     margin-top: 118px;
-    margin-left: 461px; }
+    margin-left: 49%; }
   .tile_6__container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 44px;
+    margin-left: 5%;
     margin-top: 123px; }
   .tile_6__view {
     display: flex;
@@ -237,83 +237,122 @@ body {
   height: 100%;
   flex: 5;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  align-items: center; }
   .tile_7__pic {
     background: linear-gradient(#ffffff21, #ffffff21), url(../img/chair3.png) no-repeat right/cover;
     background-size: contain;
     height: 200px;
     width: 600px;
-    margin-top: 34px;
-    align-self: center; }
+    margin-top: 34px; }
   .tile_7__overview {
     flex: 1;
-    height: 100%;
-    display: flex;
-    margin-left: 197px; }
+    width: 550px;
+    display: flex; }
   .tile_7__model {
-    flex: 1;
+    flex: 7;
     height: 100%;
-    margin-right: 108px; }
+    margin-top: 7px; }
   .tile_7__view {
+    flex: 6;
     display: flex;
-    align-items: center; }
+    align-items: center;
+    margin-bottom: 10px; }
   .tile_7__like {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center; }
+    justify-content: center;
+    margin-right: 5px;
+    margin-top: 24px; }
 
 .tile_8 {
   height: 100%;
   flex: 2;
   background: linear-gradient(rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.18)), url(../img/metal.png) no-repeat left/cover;
   background-size: contain; }
+  .tile_8__model {
+    margin-top: 102px;
+    margin-left: 203px; }
   .tile_8__view {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    margin-top: 41px;
+    margin-left: 163px; }
   .tile_8__like {
     display: flex;
     flex-direction: column;
-    justify-content: center; }
+    justify-content: center;
+    margin-left: 250px;
+    margin-top: 30px; }
 
 .tile_9 {
   width: 100%;
   height: 100%;
   background: linear-gradient(rgba(82, 83, 71, 0.03), rgba(82, 83, 71, 0.03)), url(../img/lamp2.png) no-repeat right/cover;
-  background-size: contain; }
+  background-size: contain;
+  display: flex;
+  flex-direction: column; }
   .tile_9__model {
     font-size: 15px;
-    font-weight: 300; }
+    font-weight: 300;
+    line-height: 1;
+    margin-top: 47px;
+    margin-left: 10%; }
   .tile_9__view {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 10%; }
   .tile_9__like {
     display: flex;
     flex-direction: column;
-    justify-content: center; }
+    justify-content: center;
+    margin-top: 32px;
+    margin-left: 23%; }
 
 .tile_10 {
   flex: 9;
   background: linear-gradient(rgba(84, 88, 34, 0.151), rgba(84, 88, 34, 0.151)), url(../img/chair4.png) no-repeat top/cover;
-  background-size: contain; }
+  background-size: contain;
+  display: flex;
+  align-items: flex-end; }
+  .tile_10__model {
+    margin-left: 12%;
+    margin-bottom: 46px;
+    flex: 9; }
   .tile_10__view {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    margin-bottom: 82px;
+    flex: 8; }
   .tile_10__like {
     display: flex;
     flex-direction: column;
-    justify-content: center; }
+    justify-content: center;
+    margin-bottom: 54px;
+    flex: 4; }
 
 .tile_11 {
   flex: 5;
   background: url(../img/chair5.png) no-repeat left/cover;
-  background-size: contain; }
+  background-size: 56%;
+  display: flex;
+  flex-direction: column; }
+  .tile_11__model {
+    margin-top: 60px;
+    margin-left: 320px; }
   .tile_11__view {
     display: flex;
-    align-items: center; }
+    align-items: center;
+    margin-top: 26px;
+    margin-left: 320px; }
   .tile_11__like {
     display: flex;
     flex-direction: column;
-    justify-content: center; }
+    justify-content: center;
+    margin-top: 28px;
+    margin-left: 405px; }
 
 .tile_12 {
   height: 385px;
