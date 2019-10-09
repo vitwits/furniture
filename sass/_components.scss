@@ -59,7 +59,11 @@
   margin-right: 10px;
 }
 
-.arrow-red {}
+.arrow-red {
+  margin-right: auto;
+  margin-left: 10px;
+  height: 18px;
+}
 
 .heart {
   height: 28px;
@@ -111,7 +115,12 @@
   line-height: 1;
 }
 
-
+.style_17-bold {
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1;
+}
 
 ////////////////////////
 ///////////HEADER
@@ -321,7 +330,7 @@
   flex: 5;
   display: flex;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
 
   &__pic {
     background: linear-gradient(#ffffff21,
@@ -338,7 +347,7 @@
     flex: 1;
     width: 550px;
     display: flex;
-    
+
   }
 
   &__model {
@@ -412,7 +421,7 @@
     line-height: 1;
     margin-top: 47px;
     margin-left: 10%;
-    
+
   }
 
   &__view {
@@ -470,7 +479,7 @@
   background-size: 56%;
   display: flex;
   flex-direction: column;
-  
+
 
   &__model {
     margin-top: 60px;
@@ -502,28 +511,362 @@
 //////////////////////////////////////
 /////////////////////////STUDIO
 
-.tile_13 {}
+.tile_13 {
+  flex: 22;
+  background: #ff9b6d;
+}
 
-.tile_14 {}
+.tile_14 {
+  flex: 22;
+  display: flex;
+  flex-direction: column;
 
-.tile_15 {}
 
-.tile_16 {}
+  &__bold {
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 1;
+    font-style: italic;
+    margin-top: 120px;
+    margin-left: 24%;
+    max-width: 444px;
 
-.tile_17 {}
 
-.tile_18 {}
+    & p {
+      margin-bottom: 18px;
+    }
+  }
 
-.tile_19 {}
+  &__regular {
+    font-size: 23px;
+    font-weight: 300;
+    margin-left: 24%;
+    margin-top: 20px;
+    max-width: 444px;
+    line-height: 1;
+
+    & p {
+      margin-bottom: 18px;
+    }
+  }
+}
+
+.tile_15 {
+  flex: 26;
+  display: flex;
+  flex-direction: column;
+
+
+  &__picture {
+    background: url(../img/interior.jpg) no-repeat left/cover;
+    background-size: contain;
+    height: 258px;
+    margin-left: 40px;
+    margin-top: 120px;
+
+  }
+
+  &__awards {
+    margin-left: 40px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.185);
+    width: 465px;
+    margin-top: 50px;
+    padding-bottom: 3px;
+  }
+
+  &__text {
+    margin-left: 40px;
+    display: flex;
+    justify-content: space-between;
+    width: 465px;
+    margin-top: 35px;
+
+    & p {
+      line-height: 1.2;
+    }
+
+  }
+
+  &__left {}
+
+  &__right {}
+}
+
+.tile_16 {
+  flex: 10;
+
+  & p {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
+
+  & p:first-child {
+    font-weight: 400;
+  }
+}
+
+.tile_17 {
+  flex: 11;
+  display: flex;
+  flex-direction: column;
+
+  &__image {
+    background: url(../img/person1.jpg) no-repeat left, linear-gradient(rgb(255, 255, 255),
+        rgb(255, 255, 255));
+    background-size: contain;
+    height: 185px;
+    margin-left: 37px;
+  }
+
+  &__name {
+    margin-left: 37px;
+    margin-top: 22px;
+  }
+
+  &__contact {
+    display: flex;
+    align-items: center;
+    margin-top: 22px;
+    margin-left: 37px;
+    color: #fd5000;
+
+    & p {
+      font-weight: 400;
+      font-size: 18px
+    }
+
+    & a {
+      color: #fd5000;
+      text-decoration: none;
+      outline: none;
+      padding: 0 8px;
+    }
+
+    & a:first-of-type {
+      margin-right: auto;
+    }
+
+  }
+}
+
+.tile_18 {
+  flex: 11;
+  display: flex;
+  flex-direction: column;
+
+  &__image {
+    background: url(../img/person2.jpg) no-repeat left/cover;
+    height: 185px;
+    margin-left: 37px;
+  }
+
+  &__name {
+    margin-left: 37px;
+    margin-top: 22px;
+  }
+
+  &__contact {
+    display: flex;
+    align-items: center;
+    margin-top: 22px;
+    margin-left: 37px;
+    color: #fd5000;
+
+    & p {
+      font-weight: 400;
+      font-size: 18px
+    }
+
+    & a {
+      color: #fd5000;
+      text-decoration: none;
+      outline: none;
+      padding: 0 8px;
+    }
+
+    & a:first-of-type {
+      margin-right: auto;
+    }
+
+  }
+}
+
+.tile_19 {
+  flex: 11;
+  display: flex;
+  flex-direction: column;
+
+  &__image {
+    background: url(../img/person3.jpg) no-repeat left/cover;
+    height: 185px;
+    margin-left: 37px;
+  }
+
+  &__name {
+    margin-left: 37px;
+    margin-top: 22px;
+  }
+
+  &__contact {
+    display: flex;
+    align-items: center;
+    margin-top: 22px;
+    margin-left: 37px;
+    color: #fd5000;
+
+    & p {
+      font-weight: 400;
+      font-size: 18px
+    }
+
+    & a {
+      color: #fd5000;
+      text-decoration: none;
+      outline: none;
+      padding: 0 8px;
+    }
+
+    & a:first-of-type {
+      margin-right: auto;
+    }
+
+  }
+}
 
 
 //////////////////////////////////////
 //////////////////////////NEWS
-.tile_20 {}
+.tile_20 {
+  background: #d4edbf;
+  flex: 1;
+  
+}
 
-.tile_21 {}
+.tile_21 {
+  height: 100%;
+  width: 475px;
+  margin-right: 38px;
+  display: flex;
+  flex-direction: column;
 
-.tile_22 {}
+  &__header {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-size: 31px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1; 
+    letter-spacing: -0.5px;
+    margin-bottom: 5px;
+  }
+
+  &__date {
+    font-size: 15px;
+    font-weight: 400;
+    color: #6a6969;
+    margin-bottom: 18px;
+  }
+
+  &__pic {
+    background: url(../img/lamp3.jpg) no-repeat left/cover;
+    height: 230px;
+  }
+
+  &__about {
+    margin-top: 26px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__paragraph {
+    word-spacing: 11px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: justify;
+  }
+
+  &__read {
+    text-align: right;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fd5000;
+    text-transform: uppercase;
+    margin-top: 8px;
+  }
+}
+
+.tile_22 {
+  height: 100%;
+  width: 475px;
+  margin-right: 38px;
+  display: flex;
+  flex-direction: column;
+
+  &__header {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__title {
+    font-size: 31px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1; 
+    letter-spacing: -0.5px;
+    margin-bottom: 5px;
+  }
+
+  &__date {
+    font-size: 15px;
+    font-weight: 400;
+    color: #6a6969;
+    margin-bottom: 18px;
+  }
+
+  &__pic {
+    background: url(../img/chair6.png) no-repeat left/cover;
+    height: 230px;
+  }
+
+  &__about {
+    margin-top: 26px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__paragraph {
+    word-spacing: 11px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: justify;
+  }
+
+  &__read {
+    text-align: right;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fd5000;
+    text-transform: uppercase;
+    margin-top: 8px;
+  }
+}
 
 
 //////////////////////////////////////
@@ -531,11 +874,67 @@
 .tile_23 {
   flex: 1;
   height: 100%;
-  background: rgb(42, 21, 21);
+  background: url(../img/map.png) no-repeat left center/cover;
 }
 
 .tile_24 {
   flex: 1;
   height: 100%;
-  background: rgb(90, 133, 62);
+  background: #e9eae2;
+  display: flex;
+  flex-direction: column;
+
+  &__top {
+    display: flex;
+    margin-top: 192px;
+    margin-left: 148px;
+  }
+
+  &__left {
+
+  }
+
+  &__right {
+
+  }
+
+  &_bottom {
+
+  }
+
+  &__logo {
+    
+    
+  }
+
+  &__dsgn {
+    width: 210px;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+    font-size: 23px;
+    line-height: 1;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__social i {
+    padding: 0 8px;
+    color: #95cac1;
+  }
+
+  &__fb {}
+
+  &__twitter {}
+
+  &__in {}
+
+  &__google {}
 }
