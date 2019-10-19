@@ -324,7 +324,11 @@
   position: relative;
 
   @media only screen and (max-width: 1330px) {
-    background-position: 0 0;
+    background-position-x: -100px;
+  }
+
+  @media only screen and (max-width: 800px) {
+    background: #e9eae2d3;
   }
 
   &__logo {
@@ -356,6 +360,10 @@
     margin-bottom: 80px;
     font-size: 23px;
     line-height: 1;
+
+    @media only screen and (max-width: 1330px) {
+      margin-bottom: 40px;
+    }
   }
 
   &__social {
@@ -371,6 +379,10 @@
   &__social i {
     padding: 0 8px;
     color: #95cac1;
+
+    @media only screen and (max-width: 1330px) {
+      font-size: 24px;
+    }
   }
 }
 
@@ -386,6 +398,11 @@
   line-height: 1;
   font-size: 17px;
   text-transform: uppercase;
+
+  @media only screen and (max-width: 1330px) {
+    
+    max-height: 0;
+  }
 
 
   &__address {

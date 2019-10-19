@@ -255,7 +255,10 @@ body {
   position: relative; }
   @media only screen and (max-width: 1330px) {
     .tile_1 {
-      background-position: 0 0; } }
+      background-position-x: -100px; } }
+  @media only screen and (max-width: 800px) {
+    .tile_1 {
+      background: #e9eae2d3; } }
   .tile_1__logo {
     margin-top: 64px;
     margin-left: 16%; }
@@ -277,6 +280,9 @@ body {
     margin-bottom: 80px;
     font-size: 23px;
     line-height: 1; }
+    @media only screen and (max-width: 1330px) {
+      .tile_1__text {
+        margin-bottom: 40px; } }
   .tile_1__social {
     display: flex;
     justify-content: center; }
@@ -286,6 +292,9 @@ body {
   .tile_1__social i {
     padding: 0 8px;
     color: #95cac1; }
+    @media only screen and (max-width: 1330px) {
+      .tile_1__social i {
+        font-size: 24px; } }
 
 .tile_2 {
   background: #7acec3;
@@ -299,6 +308,9 @@ body {
   line-height: 1;
   font-size: 17px;
   text-transform: uppercase; }
+  @media only screen and (max-width: 1330px) {
+    .tile_2 {
+      max-height: 0; } }
   .tile_2__address {
     display: flex;
     flex-direction: column;
@@ -904,7 +916,11 @@ body {
   min-height: 640px; }
   @media only screen and (max-width: 1330px) {
     .header {
-      flex-direction: column; } }
+      flex-direction: column;
+      min-height: 400px; } }
+  @media only screen and (max-width: 800px) {
+    .header {
+      background: url(../img/img.png) no-repeat right/cover; } }
 
 .project {
   display: flex;
