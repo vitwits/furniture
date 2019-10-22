@@ -16,39 +16,22 @@ body {
   border: 2px solid #e9eae2;
   height: 104px;
   width: 108px;
-  position: absolute;
+  position: fixed;
   top: 42px;
-  right: 15%;
+  right: 25%;
   z-index: 20;
   text-align: center;
   cursor: pointer; }
-  @media only screen and (max-width: 999px) {
-    .navigation__button {
-      height: 125px;
-      width: 130px; } }
-  @media only screen and (max-width: 999px) {
-    .navigation__button {
-      right: 5%;
-      background-color: #e9eae2;
-      border: 4px solid #7acec3; } }
 
 .navigation__background {
   height: 104px;
   width: 108px;
-  position: absolute;
+  position: fixed;
   top: 42px;
-  right: 15%;
+  right: 25%;
   background: #e9eae2;
   z-index: 10;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1); }
-  @media only screen and (max-width: 999px) {
-    .navigation__background {
-      height: 125px;
-      width: 130px; } }
-  @media only screen and (max-width: 999px) {
-    .navigation__background {
-      right: 5%;
-      background: #7acec3; } }
 
 .navigation__nav {
   height: 100vh;
@@ -57,7 +40,8 @@ body {
   left: 0;
   z-index: 15;
   opacity: 0;
-  width: 0;
+  width: 100%;
+  visibility: hidden;
   transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
 
 .navigation__list {
@@ -83,9 +67,6 @@ body {
   background-image: linear-gradient(110deg, transparent 0%, transparent 50%, #fff 50%);
   background-size: 220%;
   transition: all .4s; }
-  @media only screen and (max-width: 999px) {
-    .navigation__link:link, .navigation__link:visited {
-      color: #e9eae2; } }
 
 .navigation__link:hover, .navigation__link:active {
   background-position: 100%;
@@ -97,22 +78,17 @@ body {
 
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;
-  width: 100%; }
+  width: 100%;
+  visibility: visible; }
 
 .navigation__icon {
   position: relative;
   margin-top: 50px; }
-  @media only screen and (max-width: 999px) {
-    .navigation__icon {
-      margin-top: 55px; } }
   .navigation__icon, .navigation__icon::before, .navigation__icon::after {
     width: 35px;
     height: 3px;
     background-color: #e9eae2;
     display: inline-block; }
-    @media only screen and (max-width: 999px) {
-      .navigation__icon, .navigation__icon::before, .navigation__icon::after {
-        background-color: #7acec3; } }
   .navigation__icon::before, .navigation__icon::after {
     content: "";
     position: absolute;
