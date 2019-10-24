@@ -1,3 +1,5 @@
+'use strict'
+
 // MAX NUMBER
 function max (arr) {
   var maxNumber = arr[0]
@@ -28,7 +30,7 @@ min([4, 12, 3, -3, null, NaN, undefined, 8, 123, 9, 22, 56])
 function sum (arr) {
   var sumOfNumbers = arr[0]
   for (var i = 1; i < arr.length; i++) {
-    if (typeof (arr[i]) === 'number' && isNaN(arr[i]) !== true) {
+    if (isNaN(arr[i]) !== true) {
       sumOfNumbers += arr[i]
     }
   }
