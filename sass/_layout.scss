@@ -12,7 +12,13 @@
   width: 100%;
   min-height: 430px;
 
-  
+  @media only screen and (max-width: 999px){
+    min-height: 400px;
+  }
+
+  @media only screen and (max-width: 899px){
+    min-height: 380px;
+  }
 
   
 }
@@ -22,6 +28,10 @@
 .project {
   display: flex;
   width: 100%;
+  @media only screen and (max-width: 1249px){
+    display: initial;
+  }
+  
 }
 
 .project_1 {
@@ -34,18 +44,35 @@
   display: flex;
   height: 430px;
   width: 100%;
+
+  @media only screen and (max-width: 560px){
+    flex-direction: column;
+    height: auto;
+  }
 }
 
 .project_3 {
   display: flex;
   height: 400px;
   width: 100%;
+
+  @media only screen and (max-width: 560px){
+    display: inline-block;
+    flex-direction: column;
+    height: auto;
+  }
 }
 
 .project_4 {
   display: flex;
   height: 260px;
   width: 100%;
+
+  @media only screen and (max-width: 560px){
+    flex-direction: column;
+    height: auto;
+    
+  }
 }
 
 .project_5 {
@@ -54,6 +81,13 @@
   height: 1090px;
   background: #fff;
   flex: 9;
+
+  @media only screen and (max-width: 1249px){
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    height: 600px;
+  }
 }
 
 .project_6 {
@@ -70,11 +104,22 @@
   flex-direction: column;
   height: 765px;
   background: #e9eae2;
+
+  @media only screen and (max-width: 1249px){
+    flex-direction: row;
+    height: 100%;
+  }
 }
 
 .studio_1 {
   display: flex;
   height: 430px;
+
+  @media only screen and (max-width: 1249px){
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+  }
 }
 
 .studio_2 {
@@ -88,6 +133,11 @@
   justify-content: center;
   display: flex;
   margin-top: 54px;
+
+  @media only screen and (max-width: 1249px){
+    flex-direction: column;
+    width: 80%;
+  }
 }
 
 ///////////////////////////////////////
@@ -96,6 +146,10 @@
   display: flex;
   height: 430px;
   background: #e5e9df;
+
+  @media only screen and (max-width: 1249px){
+    height: auto;
+  }
 }
 
 .news_1 {
@@ -104,6 +158,14 @@
   margin-left: 86px;
   margin-right: 115px;
   display: flex;
+
+  @media only screen and (max-width: 1249px){
+    flex-direction: column;
+    flex: 1;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-top: 40px;
+  }
 }
 
 
@@ -112,4 +174,9 @@
 .footer {
   display: flex;
   height: 550px;
+
+  @media only screen and (max-width: 1249px){
+    flex-direction: column;
+    height: 800px;
+  }
 }

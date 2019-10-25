@@ -1,70 +1,64 @@
 ////////////////////////
 ///////////GENERAL COMPONENTS
 .navigation {
+  position: relative;
+  margin-right: -27%;
+  height: 104px;
+  width: 108px;
+  top: 42px;
+
+  @media only screen and (max-width: 899px) {
+    margin-right: 40px;
+  }
+
   &__checkbox {
     display: none;
   }
 
   &__button {
     background-color: #7acec3;
-   
+
     border: 2px solid #e9eae2;
     height: 104px;
     width: 108px;
-    position: fixed;
-    top: 42px;
-    right: 25%;
+    position: absolute;
+
+
     z-index: 20;
     text-align: center;
     cursor: pointer;
 
-    // @media only screen and (max-width: 999px) {
-    //   height: 125px;
-    //   width: 130px;
-    // }
-
-    // @media only screen and (max-width: 999px) {
-    //   right: 5%;
-    //   background-color: #e9eae2;
-    //   border: 4px solid #7acec3;
-    // }
+    @media only screen and (max-width: 899px) {
+      background-color: #e9eae2;
+      border: 2px solid #7acec3;
+    }
   }
 
   &__background {
     height: 104px;
     width: 108px;
-    position: fixed;
-    top: 42px;
-    right: 25%;
+    position: absolute;
     background: #e9eae2;
-    
+
     z-index: 10;
     transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
 
-    // @media only screen and (max-width: 999px) {
-    //   height: 125px;
-    //   width: 130px;
-    // }
-
-    // @media only screen and (max-width: 999px) {
-    //   right: 5%;
-    //   background: #7acec3;
-    // }
-
+    @media only screen and (max-width: 899px) {
+      background: #7acec3;
+    }
   }
 
 
   &__nav {
     height: 100vh;
-    position: fixed;
+    position: absolute;
     top: 0;
-    left: 0;
+    left: -450%;
     z-index: 15;
     opacity: 0;
     width: 100%;
     visibility: hidden;
     transition: all .8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    
   }
 
   &__list {
@@ -96,9 +90,9 @@
       background-size: 220%;
       transition: all .4s;
 
-      // @media only screen and (max-width: 999px) {
-      //   color: #e9eae2;
-      // }
+      @media only screen and (max-width: 899px) {
+        color: #e9eae2;
+      }
     }
 
     &:hover,
@@ -111,14 +105,14 @@
 
 
   //FUNCTIONALITY
-  &__checkbox:checked ~ &__background {
+  &__checkbox:checked~&__background {
     transform: scale(80);
-    
+
   }
 
-  &__checkbox:checked ~ &__nav {
+  &__checkbox:checked~&__nav {
     opacity: 1;
-    width: 100%;
+    width: 50%;
     visibility: visible;
   }
 
@@ -140,9 +134,9 @@
       background-color: #e9eae2;
       display: inline-block;
 
-      // @media only screen and (max-width: 999px) {
-      //   background-color: #7acec3;
-      // }
+      @media only screen and (max-width: 899px) {
+        background-color: #7acec3;
+      }
     }
 
     &::before,
@@ -325,19 +319,41 @@
   background-position-x: 10px;
   flex: 167;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: flex-start;
   position: relative;
 
+  @media only screen and (max-width: 899px) {
+    background-position: -100px;
+    background-size: contain;
+    flex: 1;
+  }
+
+  @media only screen and (max-width: 549px) {
+    background:
+      linear-gradient(#e6e5dfdc,
+        #e6e5dfdc),
+      url(../img/img.png) no-repeat center left/cover;
+    background-position: -280px;
+
+  }
 
 
   &__logo {
     margin-top: 42px;
     margin-left: 18%;
+
+    @media only screen and (max-width: 899px) {
+      margin-left: 40px;
+    }
   }
 
   &__dsgn {
     width: 140px;
+
+    @media only screen and (max-width: 999px) {
+      width: 100px;
+    }
   }
 
   &__text {
@@ -394,8 +410,9 @@
   font-size: 11px;
   text-transform: uppercase;
 
-
-
+  @media only screen and (max-width: 899px) {
+    display: none;
+  }
 
   &__address {
     display: flex;
@@ -429,6 +446,11 @@
     display: flex;
     margin-top: 145px;
     margin-left: 25%;
+
+    @media only screen and (max-width: 749px) {
+      margin-top: 50px;
+      margin-left: 10%;
+    }
   }
 
   &__arrow {
@@ -457,6 +479,11 @@
   &__header {
     margin-top: 50px;
     margin-left: 45%;
+
+    @media only screen and (max-width: 749px) {
+      margin-top: 240px;
+      margin-left: 25%;
+    }
   }
 }
 
@@ -471,12 +498,29 @@
   &__model {
     margin-top: 76px;
     margin-left: 18%;
+
+    @media only screen and (max-width: 1249px) {
+      margin-left: 10%;
+    }
+
+    @media only screen and (max-width: 749px) {
+      margin-top: 40px;
+    }
+
   }
 
   &__view {
-
     margin-left: 19%;
     margin-top: 50px;
+
+    @media only screen and (max-width: 1249px) {
+      margin-left: 12%;
+    }
+
+    @media only screen and (max-width: 749px) {
+      margin-top: 200px;
+      margin-left: 10%;
+    }
 
     & a {
       text-decoration: none;
@@ -489,9 +533,22 @@
   &__like {
     display: flex;
     flex-direction: column;
-
     margin-top: 95px;
     margin-left: 30%;
+
+    @media only screen and (max-width: 1249px) {
+      margin-left: 20%;
+    }
+
+    @media only screen and (max-width: 749px) {
+      margin-top: 20px;
+      margin-left: 24%;
+    }
+
+    @media only screen and (max-width:560px){
+      margin-bottom: 25px;
+    }
+
   }
 }
 
@@ -499,9 +556,12 @@
   height: 100%;
   flex: 2;
   background: url(../img/chair1.jpg) no-repeat center center/cover;
-  background-size: height;
   display: flex;
   flex-direction: column;
+
+  @media only screen and (max-width: 560px){
+   height: 400px;
+  }
 
   &__model {
     margin-top: 30px;
@@ -541,9 +601,24 @@
   flex: 5;
   display: flex;
 
+  @media only screen and (max-width: 949px) {
+    flex-direction: column;
+    background-position: bottom center;
+    background-size: 600px;
+  }
+
+  @media only screen and (max-width: 560px){
+    height: 400px;
+    background-position: center;
+  }
+
   &__model {
     margin-top: 79px;
-    margin-left: 48%;
+    margin-left: 60%;
+
+    @media only screen and (max-width: 949px) {
+      margin-top: 20px;
+    }
   }
 
   &__container {
@@ -552,6 +627,13 @@
     align-items: center;
     margin-left: 5%;
     margin-top: 86px;
+
+    @media only screen and (max-width: 949px) {
+
+      margin-top: 20px;
+      margin-left: 60%;
+      justify-content: center;
+    }
   }
 
   &__view {
@@ -571,6 +653,7 @@
     flex-direction: column;
     justify-content: center;
     margin-top: 25px;
+
   }
 }
 
@@ -581,6 +664,11 @@
   flex-direction: column;
   align-items: center;
 
+  @media only screen and (max-width: 560px){
+    height: 150px;
+    margin-bottom: 20px;
+  }
+
   &__pic {
     background: linear-gradient(#ffffff21,
         #ffffff21),
@@ -589,6 +677,8 @@
     height: 134px;
     width: 100%;
     margin-top: 24px;
+
+    
 
   }
 
@@ -604,6 +694,10 @@
     height: 100%;
     margin-top: 7px;
     margin-right: 40px;
+
+    @media only screen and (max-width: 560px){
+      margin-right: 20px;
+    }
   }
 
   &__view {
@@ -612,6 +706,10 @@
     align-items: center;
     margin-bottom: 10px;
     margin-right: 45px;
+
+    @media only screen and (max-width: 560px){
+      margin-right: 20px;
+    }
 
     & a {
       text-decoration: none;
@@ -641,9 +739,34 @@
     url(../img/metal.png) no-repeat left/cover;
   background-size: contain;
 
+  @media only screen and (max-width: 899px) {
+    background:
+      linear-gradient(rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.7)),
+      url(../img/metal.png) no-repeat left/cover;
+  }
+
+  @media only screen and (max-width: 560px){
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+
+
   &__model {
     margin-top: 68px;
     margin-left: 138px;
+
+    @media only screen and (max-width: 899px) {
+      color: #fff;
+      margin-left: 10%;
+    }
+
+    @media only screen and (max-width: 560px){
+      margin-left: 0;
+      margin-top: 40px;
+    }
   }
 
   &__view {
@@ -652,11 +775,25 @@
     margin-top: 27px;
     margin-left: 105px;
 
+    @media only screen and (max-width: 899px) {
+      margin-left: 15%;
+    }
+
+    @media only screen and (max-width: 560px){
+      margin-left: 0;
+    }
+
     & a {
       text-decoration: none;
       outline: none;
       display: flex;
       align-items: center;
+
+      & span {
+        @media only screen and (max-width: 899px) {
+          color: #fff;
+        }
+      }
     }
   }
 
@@ -666,6 +803,27 @@
     justify-content: center;
     margin-left: 165px;
     margin-top: 30px;
+
+    @media only screen and (max-width: 899px) {
+      margin-left: 35%;
+    }
+
+    @media only screen and (max-width: 560px){
+      margin-bottom: 20px;
+      margin-left: 0;
+    }
+
+    & img {
+      @media only screen and (max-width: 899px) {
+        filter: invert(100%);
+      }
+    }
+
+    & span {
+      @media only screen and (max-width: 899px) {
+        color: #fff;
+      }
+    }
   }
 }
 
@@ -680,13 +838,22 @@
   display: flex;
   flex-direction: column;
 
+  @media only screen and (max-width: 1249px) {
+    background:
+      linear-gradient(rgba(82, 83, 71, 0.8),
+        rgba(82, 83, 71, 0.8)),
+      url(../img/lamp2.png) no-repeat right/cover;
+    color: #fff;
+    background-size: 380px;
+    background-position: right;
+  }
+
   &__model {
     font-size: 10px;
     font-weight: 300;
     line-height: 1;
     margin-top: 32px;
     margin-left: 10%;
-
   }
 
   &__view {
@@ -695,11 +862,21 @@
     margin-top: 10px;
     margin-left: 10%;
 
+    @media only screen and (max-width: 1249px) {
+      margin-top: 60px;
+    }
+
     & a {
       text-decoration: none;
       outline: none;
       display: flex;
       align-items: center;
+
+      & span {
+        @media only screen and (max-width: 1249px) {
+          color: #fff;
+        }
+      }
     }
   }
 
@@ -709,6 +886,22 @@
     justify-content: center;
     margin-top: 12px;
     margin-left: 23%;
+
+    & img {
+      @media only screen and (max-width: 1249px) {
+        filter: invert(100);
+      }
+    }
+
+    & span {
+      @media only screen and (max-width: 1249px) {
+        color: #fff;
+      }
+    }
+
+    @media only screen and (max-width: 1249px) {
+      margin-left: 20%;
+    }
   }
 }
 
@@ -723,11 +916,23 @@
   display: flex;
   align-items: flex-end;
 
+  @media only screen and (max-width: 1249px) {
+    flex-direction: column;
+    align-items: flex-start;
+    background-size: 300px;
+    background-position: center 80px;
+  }
+
   &__model {
     margin-left: 10%;
     margin-bottom: 25px;
     margin-right: 6%;
-    // flex: 9;
+
+    @media only screen and (max-width: 1249px) {
+      margin-top: 30px;
+      margin-left: 30px;
+      margin-right: 0;
+    }
   }
 
   &__view {
@@ -735,7 +940,12 @@
     align-items: center;
     margin-bottom: 53px;
     margin-right: 5%;
-    // flex: 8;
+
+    @media only screen and (max-width: 1249px) {
+      margin-top: 80px;
+      margin-bottom: 10px;
+      align-self: flex-end;
+    }
 
     & a {
       text-decoration: none;
@@ -750,7 +960,12 @@
     flex-direction: column;
     justify-content: center;
     margin-bottom: 34px;
-    // flex: 4;
+
+    @media only screen and (max-width: 1249px) {
+      align-self: flex-end;
+      margin-bottom: 0;
+      margin-right: 55px;
+    }
   }
 }
 
@@ -797,6 +1012,12 @@
   background-image: linear-gradient(to bottom right, transparent 49.9%, #fff, transparent 50.1%);
   background-repeat: no-repeat;
 
+  @media only screen and (max-width: 1249px) {
+    height: auto;
+  }
+
+
+
   &__block {
     display: flex;
     margin-top: 55px;
@@ -834,6 +1055,7 @@
   background-image: linear-gradient(to bottom right, transparent 49.9%, #fff, transparent 50.1%);
   background-repeat: no-repeat;
 
+
   &__studio {
     margin-top: 260px;
     margin-left: 44%;
@@ -855,6 +1077,12 @@
     margin-left: 24%;
     max-width: 444px;
 
+    @media only screen and (max-width: 1249px) {
+      margin-left: 10%;
+      margin-top: 30px;
+      max-width: 600px;
+      margin-right: 10px;
+    }
 
     & p {
       margin-bottom: 18px;
@@ -869,6 +1097,13 @@
     max-width: 444px;
     line-height: 1;
 
+    @media only screen and (max-width: 1249px) {
+      margin-left: 10%;
+      margin-top: 10px;
+      max-width: 600px;
+      margin-right: 10px;
+    }
+
     & p {
       margin-bottom: 18px;
     }
@@ -882,11 +1117,17 @@
 
 
   &__picture {
-    background: url(../img/interior.jpg) no-repeat left/cover;
+    background: url(../img/interior.jpg) no-repeat left;
     background-size: contain;
     height: 170px;
     margin-left: 10%;
     margin-top: 75px;
+
+    @media only screen and (max-width: 1249px) {
+      background-size: cover;
+      margin-top: 25px;
+      height: 260px;
+    }
 
   }
 
@@ -899,6 +1140,10 @@
     width: 300px;
     margin-top: 36px;
     padding-bottom: 3px;
+
+    @media only screen and (max-width: 1249px) {
+      width: 80%;
+    }
   }
 
   &__text {
@@ -908,6 +1153,11 @@
     width: 300px;
     margin-top: 20px;
 
+    @media only screen and (max-width: 1249px) {
+      margin-bottom: 30px;
+      width: 80%;
+    }
+
     & p {
       line-height: 1.2;
     }
@@ -916,8 +1166,12 @@
 }
 
 .tile_16 {
-  flex: 10;
+  flex: 13;
   margin-right: 15px;
+
+  @media only screen and (max-width: 1249px) {
+    margin-bottom: 60px;
+  }
 
   & p {
     font-size: 12px;
@@ -942,11 +1196,20 @@
     background-size: contain;
     height: 135px;
     margin-left: 37px;
+
+    @media only screen and (max-width: 1249px) {
+      height: 200px;
+      background-size: cover;
+    }
   }
 
   &__name {
     margin-left: 37px;
     margin-top: 22px;
+
+    @media only screen and (max-width: 1249px) {
+      margin-top: 10px;
+    }
   }
 
   &__contact {
@@ -955,6 +1218,11 @@
     margin-top: 22px;
     margin-left: 37px;
     color: #fd5000;
+
+    @media only screen and (max-width: 1249px) {
+      margin-top: 10px;
+      margin-bottom: 30px;
+    }
 
     & p {
       font-weight: 400;
@@ -984,11 +1252,19 @@
     background: url(../img/person2.jpg) no-repeat left/cover;
     height: 135px;
     margin-left: 37px;
+
+    @media only screen and (max-width: 1249px) {
+      height: 200px;
+    }
   }
 
   &__name {
     margin-left: 37px;
     margin-top: 22px;
+
+    @media only screen and (max-width: 1249px) {
+      margin-top: 10px;
+    }
   }
 
   &__contact {
@@ -997,6 +1273,11 @@
     margin-top: 22px;
     margin-left: 37px;
     color: #fd5000;
+
+    @media only screen and (max-width: 1249px) {
+      margin-top: 10px;
+      margin-bottom: 30px;
+    }
 
     & p {
       font-weight: 400;
@@ -1026,11 +1307,20 @@
     background: url(../img/person3.jpg) no-repeat left/cover;
     height: 135px;
     margin-left: 37px;
+
+    @media only screen and (max-width: 1249px) {
+      height: 200px;
+      background-position: right;
+    }
   }
 
   &__name {
     margin-left: 37px;
     margin-top: 22px;
+
+    @media only screen and (max-width: 1249px) {
+      margin-top: 10px;
+    }
   }
 
   &__contact {
@@ -1039,6 +1329,11 @@
     margin-top: 22px;
     margin-left: 37px;
     color: #fd5000;
+
+    @media only screen and (max-width: 1249px) {
+      margin-top: 10px;
+      margin-bottom: 30px;
+    }
 
     & p {
       font-weight: 400;
@@ -1071,6 +1366,10 @@
   &__news {
     margin-top: 240px;
     margin-left: 48%;
+
+    @media only screen and (max-width: 1249px) {
+      margin-left: 15%;
+    }
   }
 }
 
@@ -1081,12 +1380,16 @@
   display: flex;
   flex-direction: column;
 
+  @media only screen and (max-width: 1249px) {
+    margin-bottom: 50px;
+  }
+
   &__header {
     height: 70px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
+
   }
 
   &__title {
@@ -1096,7 +1399,7 @@
     line-height: 1;
     letter-spacing: -0.5px;
     text-align: justify;
-    
+
   }
 
   &__date {
@@ -1110,7 +1413,7 @@
     background: url(../img/lamp3.jpg) no-repeat left/cover;
     height: 154px;
     background-size: 100%;
-    
+
   }
 
   &__about {
@@ -1136,7 +1439,7 @@
     color: #fd5000;
     text-transform: uppercase;
     margin-bottom: 20px;
-    
+
 
     & a {
       color: #fd5000;
@@ -1155,11 +1458,11 @@
 
   &__header {
     height: 70px;
-   
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
+
   }
 
   &__title {
@@ -1169,14 +1472,14 @@
     text-transform: uppercase;
     line-height: 1;
     letter-spacing: -0.5px;
-  
+
   }
 
   &__date {
     font-size: 10px;
     font-weight: 400;
     color: #6a6969;
-    
+
     // margin-bottom: 12px;
   }
 
@@ -1210,8 +1513,8 @@
     color: #fd5000;
     text-transform: uppercase;
     margin-bottom: 20px;
-    
-    
+
+
 
     & a {
       color: #fd5000;
@@ -1231,11 +1534,25 @@
       #575f387e);
   position: relative;
 
+  @media only screen and (max-width: 1249px) {
+    background-size: cover;
+    
+  }
+
   &__pin {
     position: absolute;
     top: 225px;
     left: 250px;
     height: 45px;
+
+    @media only screen and (max-width: 1249px){
+      top: 120px;
+      left: 40%;
+    }
+
+    @media only screen and (max-width: 380px){
+      left: 152px;
+    }
   }
 }
 
@@ -1246,10 +1563,20 @@
   display: flex;
   flex-direction: column;
 
+  @media only screen and (max-width: 1249px) {
+    height: 300px;
+  }
+
   &__top {
     display: flex;
     margin-top: 127px;
     margin-left: 16%;
+
+    @media only screen and (max-width: 1249px) {
+      margin-top: 50px;
+      justify-content: space-evenly;
+      margin-left: 0;
+    }
   }
 
   &__address {
@@ -1262,6 +1589,10 @@
 
   &__right {
     margin-left: 33%;
+
+    @media only screen and (max-width: 1249px) {
+      margin-left: 0;
+    }
   }
 
   &__bottom {
@@ -1271,6 +1602,10 @@
     letter-spacing: .2px;
     word-spacing: 2px;
     font-weight: 400;
+
+    @media only screen and (max-width: 1249px) {
+      margin: 40px auto;
+    }
   }
 
   &__dsgn {
